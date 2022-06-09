@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Hello! Amul Sharma</h1>
+      {/* <h1>Hello! Amul Sharma</h1> */}
 
       <BrowserRouter>
         <Routes>

@@ -11,7 +11,7 @@ export default function Home() {
       });
   });
   return (
-    <div className="name">
+    <div className="home">
       {posts.map((post, index) => (
         <div key={index}>{<Blog title={post.title} body={post.body} />}</div>
       ))}

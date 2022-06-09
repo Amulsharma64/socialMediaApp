@@ -3,6 +3,12 @@
   padding: 0%;
   box-sizing: border-box;
 }
+.home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
 .App {
   font-family: sans-serif;
   text-align: center;
