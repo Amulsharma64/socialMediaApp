@@ -3,13 +3,27 @@
   padding: 0%;
   box-sizing: border-box;
 }
+body {
+  background-color: lightblue;
+}
 .home {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+  padding: 1rem;
 }
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+@media only screen and (max-width: 700px) {
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
