@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Blog from "../cards";
-import getNoOfpages from "./home.utils";
+// import getNoOfpages from "./home.utils";
 export default function Home() {
   const [posts, SetPosts] = useState([]);
   const [currentPost, setCurrentPost] = useState([]);
@@ -14,11 +14,11 @@ export default function Home() {
       });
   });
 
-  useEffect(() => {
-    if (posts.length !== 0) {
-      const pages = getNoOfpages(posts.length, 10);
-    }
-  }, [posts]);
+  // useEffect(() => {
+  //   if (posts.length !== 0) {
+  //     const pages = getNoOfpages(posts.length, 10);
+  //   }
+  // }, [posts]);
 
   return (
     <div className="home">
