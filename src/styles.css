@@ -3,6 +3,11 @@
   padding: 0%;
   box-sizing: border-box;
 }
+.paging {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 body {
   background-color: lightblue;
 }

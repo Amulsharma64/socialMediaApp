@@ -7,7 +7,6 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 export default function Home() {
   const [posts, SetPosts] = useState([]);
-  const [currentPost, setCurrentPost] = useState([]);
   const [pageDetail, setPageDeatail] = useState({ currentPage: 1 });
   useEffect(() => {
     axios
@@ -36,7 +35,7 @@ export default function Home() {
             </div>
           ))}
       </div>
-      <Stack spacing={2}>
+      <Stack spacing={2} className="paging">
         <Typography>Page: {pageDetail.currentPage}</Typography>
         <Pagination
           count={10}
